@@ -83,13 +83,13 @@
 
 
 
-<meta name="description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell 0x01 信息收集直觉扫了下目录，发现存在如下敏感文件与目录12http://103.x.x.x/admin.php        200http://103.x.x.x/admin/           403  在admin/目录下发现有error_log 里面记录了一些php的错误日志记录这里面有很">
+<meta name="description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell">
 <meta name="keywords" content="审计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="phpok1.4审计">
 <meta property="og:url" content="http://yoursite.com/2018/04/17/phpok1-4审计/index.html">
 <meta property="og:site_name" content="AirBoi">
-<meta property="og:description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell 0x01 信息收集直觉扫了下目录，发现存在如下敏感文件与目录12http://103.x.x.x/admin.php        200http://103.x.x.x/admin/           403  在admin/目录下发现有error_log 里面记录了一些php的错误日志记录这里面有很">
+<meta property="og:description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/05/23/59237e72d5c8a.png">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/05/23/59237ed9695a8.png">
@@ -105,10 +105,10 @@
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/05/23/59238cb231c85.png">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/05/23/59238e061d02e.png">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/05/25/592670d944d0d.png">
-<meta property="og:updated_time" content="2018-04-17T02:48:28.000Z">
+<meta property="og:updated_time" content="2018-04-17T02:54:47.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="phpok1.4审计">
-<meta name="twitter:description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell 0x01 信息收集直觉扫了下目录，发现存在如下敏感文件与目录12http://103.x.x.x/admin.php        200http://103.x.x.x/admin/           403  在admin/目录下发现有error_log 里面记录了一些php的错误日志记录这里面有很">
+<meta name="twitter:description" content="phpok1.4审计小记0x00 概要变量覆盖&amp;amp;sql注入&amp;amp;webshell">
 <meta name="twitter:image" content="https://ooo.0o0.ooo/2017/05/23/59237e72d5c8a.png">
 
 
@@ -350,6 +350,7 @@
 
       
         <h1 id="phpok1-4审计小记"><a href="#phpok1-4审计小记" class="headerlink" title="phpok1.4审计小记"></a>phpok1.4审计小记</h1><h2 id="0x00-概要"><a href="#0x00-概要" class="headerlink" title="0x00 概要"></a>0x00 概要</h2><p>变量覆盖&amp;sql注入&amp;webshell</p>
+<a id="more"></a>
 <h2 id="0x01-信息收集"><a href="#0x01-信息收集" class="headerlink" title="0x01 信息收集"></a>0x01 信息收集</h2><p>直觉扫了下目录，发现存在如下敏感文件与目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://103.x.x.x/admin.php        200</span><br><span class="line">http://103.x.x.x/admin/           403</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://ooo.0o0.ooo/2017/05/23/59237e72d5c8a.png" alt="image"><br><img src="https://ooo.0o0.ooo/2017/05/23/59237ed9695a8.png" alt="image"></p>
 <p>在admin/目录下发现有error_log 里面记录了一些php的错误日志记录<br><img src="https://ooo.0o0.ooo/2017/05/23/59237f60127b2.png" alt="image"><br>这里面有很明显的痕迹，大多数文件都以xx.qg.php命名，去百度搜了一波，得到CMS情感家园(qgweb)，但这是什么CMS，从来没见过，也没有任何信息提供该CMS的版本等等，这个思路挂了</p>
