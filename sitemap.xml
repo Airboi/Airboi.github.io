@@ -22,4 +22,25 @@
     
   </url>
   
+  <url>
+    <loc>http://yoursite.com/2017/05/31/NJCTF2017%20writeup/</loc>
+    
+    <lastmod>2017-05-31T02:07:25.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/31/Error%20Based%20SQL%20Injection/</loc>
+    
+    <lastmod>2017-05-31T02:05:15.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/31/Redis%20%E6%9C%AA%E6%8E%88%E6%9D%83%E8%AE%BF%E9%97%AE%E6%BC%8F%E6%B4%9E%E4%B8%8ESSH%E9%85%8D%E5%90%88getshell/</loc>
+    
+    <lastmod>2017-05-31T02:04:02.735Z</lastmod>
+    
+  </url>
+  
 </urlset>
