@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://airboi.github.io/"/>
+  <link href="http://Airboi.github.io/"/>
   <updated>2018-04-17T02:48:28.000Z</updated>
-  <id>http://airboi.github.io/</id>
+  <id>http://Airboi.github.io/</id>
   
   <author>
     <name>Boi</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>phpok1.4审计</title>
-    <link href="http://airboi.github.io/2018/04/17/phpok1-4%E5%AE%A1%E8%AE%A1/"/>
-    <id>http://airboi.github.io/2018/04/17/phpok1-4审计/</id>
+    <link href="http://Airboi.github.io/2018/04/17/phpok1-4%E5%AE%A1%E8%AE%A1/"/>
+    <id>http://Airboi.github.io/2018/04/17/phpok1-4审计/</id>
     <published>2018-04-17T02:36:18.000Z</published>
     <updated>2018-04-17T02:48:28.000Z</updated>
     
@@ -35,14 +35,14 @@
     </summary>
     
     
-      <category term="审计" scheme="http://airboi.github.io/tags/%E5%AE%A1%E8%AE%A1/"/>
+      <category term="审计" scheme="http://Airboi.github.io/tags/%E5%AE%A1%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://airboi.github.io/2018/04/15/hello-world/"/>
-    <id>http://airboi.github.io/2018/04/15/hello-world/</id>
+    <link href="http://Airboi.github.io/2018/04/15/hello-world/"/>
+    <id>http://Airboi.github.io/2018/04/15/hello-world/</id>
     <published>2018-04-15T14:37:54.412Z</published>
     <updated>2018-04-15T14:37:54.412Z</updated>
     
