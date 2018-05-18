@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/05/18/SSRF%E5%88%86%E6%9E%90%E4%B8%8E%E5%88%A9%E7%94%A8/</loc>
+    
+    <lastmod>2018-05-18T13:44:40.917Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/05/02/Redhat-ctf-AdvancedECC/</loc>
     
     <lastmod>2018-05-02T08:58:57.419Z</lastmod>
